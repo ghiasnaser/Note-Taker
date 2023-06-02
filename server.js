@@ -16,12 +16,12 @@ app.use('/api', api);
 
 //Get Route for the home page
 app.get('/',(req,res)=>
-    res.sendFile(path.join(__dirname,'public/pages/index.html'))
+    res.sendFile(path.join(__dirname,'/public/pages/index.html'))
 );
 
 //get Routw for the notes page
 app.get('/notes',(req,res)=>
-    res.sendFile(path.join(__dirname,'public/pages/notes.html'))
+    res.sendFile(path.join(__dirname,'/public/pages/notes.html'))
 );
 
 app.listen(PORT,()=>
